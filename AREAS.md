@@ -1,7 +1,7 @@
 # Where Foundation0 can make progress in astronomy
 
 A survey made on 18 October 2026, when astr0 was empty. It draws on a scouting report written by an AI research agent
-([full report with sources](https://github.com/Foundation-0/f0/tree/claude/sleepy-pasteur-k5knht/deep-fields/scouting/astronomy.md))
+([full report with sources](https://github.com/Foundation-0/f0/tree/main/deep-fields/scouting/astronomy.md))
 and on the first project it led to. Areas that become projects get their own repository, listed in the
 [README](README.md).
 
