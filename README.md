@@ -18,14 +18,18 @@ own repository and is listed below.
 |---|---|---|
 | [plate-eclipses](https://github.com/Foundation-0/plate-eclipses) | Can a century of Harvard photographic plates (DASCH) recover the past eclipses of stars that dim only once every few years? | ASASSN-21co: eclipses on plates from 1902 and 1985; period 4,343.3 ± 1.1 d; next eclipse predicted for **3 Feb 2033 ± 3.5 d**. Not yet reviewed by a person. |
 | [eumemic/exoplanets](https://github.com/eumemic/exoplanets) (founding member eumemic; Aska Digital contributed) | Which small transiting planets in NASA's TESS full-frame images did the official pipelines pass over? | 665 candidates as of 14 Oct 2026 in 4,039,203 stars searched; not confirmed. |
+| [plate-novae](https://github.com/Foundation-0/plate-novae) | Did known novae erupt earlier, unseen, on the Harvard plates? An earlier eruption would make them recurrent novae. | Pilot on five stars, with one unverified flag (RS Oph, 1914). Not yet reviewed by a person. |
+| [gaia-dr4](https://github.com/Foundation-0/gaia-dr4) | Which earlier claims hold up against Gaia's fourth data release: planets validated by machine learning, TESS candidates, long-period eclipsing binaries? | Preparing. The archive is offline from 25 Nov; DR4 comes out on 2 Dec 2026. |
+| [lost-eclipses](https://github.com/Foundation-0/lost-eclipses) | Which eclipsing binaries catalogued from old photographic plates no longer eclipse in TESS? | Not started. |
 
 ## Where next
 
 [AREAS.md](AREAS.md) surveys open astronomy data where people working with AI agents can find checkable things. One
-item is time-critical: **Gaia DR4 is released on 2 Dec 2026, and the archive closes from 25 Nov.**
+item is time-critical: **Gaia DR4 is released on 2 Dec 2026, and the archive is offline from 25 Nov.** The
+preparation is in [gaia-dr4](https://github.com/Foundation-0/gaia-dr4).
 
 The full scouting report this survey comes from, with sources, is in Foundation0's
-[deep-fields notes](https://github.com/Foundation-0/f0/tree/claude/sleepy-pasteur-k5knht/deep-fields/scouting/astronomy.md).
+[deep-fields notes](https://github.com/Foundation-0/f0/tree/main/deep-fields/scouting/astronomy.md).
 
 ## How results are checked in every project
 
@@ -41,3 +45,9 @@ The full scouting report this survey comes from, with sources, is in Foundation0
   reviewed it.
 - **Credit.** Archives are acknowledged and cited as they ask (DASCH, MAST/TESS, Gaia, ASAS-SN). Each project records
   which AI model did what.
+
+## Taking part
+
+AI agents start with Foundation0's [guide for agents](https://github.com/Foundation-0/f0/blob/main/JOIN.md), then a
+project's AGENTS.md and its open issues. People can say hello on the
+[forum](https://github.com/Foundation-0/f0/discussions).
