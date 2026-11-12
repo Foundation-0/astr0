@@ -1,0 +1,74 @@
+{
+  "source_hashes": {
+    "ANALYSIS-PLAN.md": "39bc22224e1d729411ed3c71f3f1b65a0b4531ab83ba2b723dd22111c6953b5b",
+    "REPRODUCTION-NOTES.md": "23c89323bf134ef635d034c4d5c3b5fda1b3d8ade470d132168f85f66f203890",
+    "RESULTS.md": "ae14630267f08a8797c815d2d27977f5a13960613896afea70111c76ad478559",
+    "kmos_diagnostic.py": "facda3d2ac5bd68adf7f7221b88bc377550d2405861f6e245effdf58f5907203",
+    "test_kmos_diagnostic.py": "c1310f2b2e864e6bb042c8391d10c9b53bf447a25af72805a091b6140bed7185",
+    "plot-requirements.txt": "12a0a7bc6e1b1254c2f593a250e6ccff4dbd3cf0b27d6819696a9db86f4e530d",
+    "sources.json": "6ea8f69395419c584a315aa661ccd5ab28ff07c71877496404c9c8bdaba7abab",
+    "results/kmos-diagnostic.json": "d52cb2ca253b480cf65ad79918e6ae222a22c58d270c9be70c42dae5af787878",
+    "results/kmos-diagnostic.png": "91553d6cd43145251194e094fb5d5198662d2b3a43858cf4ebaa57ca344d1884",
+    "results/kmos-diagnostic.pdf": "fdf2fef192c97be29e009a5203c356fec59b10739b578ded5fc56a9e06bfa940"
+  },
+  "numeric_input_sha256": "afadb1ef14ab6b88ce492f3fbf53d7d81e30fe178dcab6642aafdd1744c918f3",
+  "delta_x": 0.31052441776803963,
+  "delta_y_dex": -0.16748389103276362,
+  "median_delta_y_dex": -0.1557349424719634,
+  "stellar_delta_y_dex": -0.003641081668215196,
+  "gas_algebraic_contribution_dex": 0.16384280936454845,
+  "calibration_contrasts": {
+    "0": {
+      "residue_dex": -0.16748389103276362,
+      "velocity_factor": 0.9080902802801148,
+      "mass_factor": 1.4705638678440849
+    },
+    "1": {
+      "residue_dex": -0.47800830880080325,
+      "velocity_factor": 0.7594477902733978,
+      "mass_factor": 3.006133814591117
+    }
+  },
+  "speed_bins": [
+    {
+      "counts": [
+        20,
+        10
+      ],
+      "delta_y_dex": -0.22426402102780063
+    },
+    {
+      "counts": [
+        29,
+        26
+      ],
+      "delta_y_dex": -0.18803323069313627
+    },
+    {
+      "counts": [
+        16,
+        10
+      ],
+      "delta_y_dex": -0.18621449746173857
+    }
+  ],
+  "descriptive_rms": {
+    "0": 0.3628788107170332,
+    "1": 0.41498661120128355
+  },
+  "rounding_only_delta_y_enclosure_dex": [
+    -0.1782371634118185,
+    -0.1567306019862822
+  ],
+  "rotation_cut_approximation_failures": [
+    {
+      "Seq": 6,
+      "fraction": 0.5099673055989798,
+      "rounding_bounds": [
+        0.5091280450934996,
+        0.5108076087801534
+      ]
+    }
+  ],
+  "disposition": "Point diagnostics reproduced. No likelihood, measurement of a0, or inference on q is established."
+}

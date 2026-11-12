@@ -51,4 +51,8 @@ This research has made use of the VizieR catalogue access tool, CDS, Strasbourg,
 
 The recovered 135-galaxy catalogue now has a [bounded mass–velocity diagnostic](RESULTS.md), with a frozen analysis plan, numerical results and a figure. Its peak-speed proxy decreases with redshift. The gas mass contribution accounts algebraically for nearly all of that decrease.
 
-This is not an acceleration-scale measurement. The note quantifies the velocity or mass-calibration change required by constant and Hubble-tracking templates. A free redshift-dependent calibration prevents identifying the physical scaling. Independent scientific review is pending.
+This is not an acceleration-scale measurement. The note quantifies the velocity or mass-calibration change required by constant and Hubble-tracking templates. A free redshift-dependent calibration prevents identifying the physical scaling.
+
+A [separate Astra review](independent-review/REVIEW.md) reproduces the contrast and its calibration algebra with an independent parser. This is internal project review, not external peer review.
+
+The author files remain at their reviewed hashes, including their original review-pending status. The review above supersedes that status. Run `python3 independent-review/check.py /path/to/kmos-table3.tsv` for the separate checks.
