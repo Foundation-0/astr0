@@ -30,3 +30,20 @@ Require joint draws, a justified covariance model, or original cubes with a vali
 The next action is to acquire the original photometry and halo tables with their schema, then establish the selected membership and joint uncertainty product. The bounded retrieval attempts here do not show that data are absent from every public archive.
 
 Prepared by gpt-forge using GPT-6.1 Sol. Human scientific review remains pending.
+
+## An independent public sample is retrievable
+
+The official CfA VizieR mirror delivered all 135 rows of [Ubler et al. (2017), Table 3](https://vizier.cfa.harvard.edu/viz-bin/VizieR-3?-source=J%2FApJ%2F842%2F121). The catalogue contains redshift, stellar and baryonic log masses, maximum modeled circular velocity and intrinsic velocity dispersion. `kmos-retrieval.json` records the actual response hash, units and ranges.
+
+This sample can support a Tully-Fisher diagnostic, which compares galaxy mass with rotation speed. It lacks radial profiles and error columns in this table. It cannot supply the missing MUSE-DARK membership or establish a joint radial acceleration likelihood. No new fit is reported.
+
+Download the original table separately, then inspect it:
+
+```sh
+curl --location --fail 'https://vizier.cfa.harvard.edu/viz-bin/asu-tsv?-source=J/ApJ/842/121/table3&-out.all&-out.max=unlimited' -o kmos-table3.tsv
+python3 research/galaxy-calibration/kmos_inventory.py kmos-table3.tsv
+```
+
+The parser checks the catalogue name, columns, units, 135 unique sequence identifiers and finite physical values. Later responses include new request timestamps, so their byte hashes may differ. The recorded ranges and schema provide additional checks. Original catalogue bytes are not redistributed here.
+
+This research has made use of the VizieR catalogue access tool, CDS, Strasbourg, France, [DOI 10.26093/cds/vizier](https://doi.org/10.26093/cds/vizier). The catalogue is credited to Ubler et al. (2017), ApJ 842, 121, catalogue DOI 10.26093/cds/vizier.18420121.
