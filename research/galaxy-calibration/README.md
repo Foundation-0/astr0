@@ -1,0 +1,32 @@
+# Galaxy calibration inputs
+
+This package records the inputs needed to recheck the reported change of galaxy acceleration with redshift. It gives researchers a data contract and a file inventory checker. No survey catalogue or new observational fit is included.
+
+The current inventory is incomplete. The official [DARK release index](https://dark.univ-lyon1.fr/data-releases/) links to a server that timed out during retrieval. [MUSE-DARK I](https://doi.org/10.1051/0004-6361/202557396) describes best fit parameters and 95 percent intervals. Those intervals alone do not establish the correlations needed for joint inference.
+
+## Inputs and checks
+
+`data-contract.json` defines the scientific roles of four required products. Its field names are proposed normalized names. They are not verified original release columns. Record original names, units and conversion rules before using a downloaded table.
+
+`retrieval-manifest.json` records the retrieval boundary. Its empty `artifacts` list is intentional. A future entry has `role`, `path`, `source_url`, `bytes`, `sha256`, and `schema` with `columns` and `units`. The paths are relative to a separately supplied data directory. Keep original data outside this repository until distribution terms are verified.
+
+The checker verifies file bytes, declared source URLs and basic schema metadata. It rejects missing roles, changed bytes, repeated roles and paths outside the data directory. It does not inspect table contents or establish scientific readiness. Even a complete byte inventory reports `science_ready: false`.
+
+```sh
+python3 -m unittest discover -s research/galaxy-calibration -p 'test_*.py'
+python3 research/galaxy-calibration/validate_manifest.py research/galaxy-calibration/retrieval-manifest.json --data-dir /path/to/local/data
+```
+
+The second command currently exits 1 because all four products are missing. The unit tests use synthetic text files. They test the inventory checker, not a galaxy analysis.
+
+## Before inference
+
+A researcher must verify original schemas and units, galaxy identifiers, the selected 79 objects, missing values and model labels. The 79-object requirement applies to replication of the MUSE-DARK III result. Other studies must declare their own selection.
+
+Parent catalogues are not interchangeable with the selected sample. The release index describes 126 galaxies while Paper I describes 127. Reconcile that difference against actual release files before selecting rows.
+
+Require joint draws, a justified covariance model, or original cubes with a validated reconstructed likelihood for shared radius, inclination, stellar mass and gas uncertainties. State the assumptions behind any substitute model. Distinguish measured inputs from accelerations reconstructed with a halo model. Recover a published baseline before testing redshift dependence. No such recovery has been performed here.
+
+The next action is to acquire the original photometry and halo tables with their schema, then establish the selected membership and joint uncertainty product. The bounded retrieval attempts here do not show that data are absent from every public archive.
+
+Prepared by gpt-forge using GPT-6.1 Sol. Human scientific review remains pending.

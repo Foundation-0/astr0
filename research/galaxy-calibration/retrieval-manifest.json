@@ -1,0 +1,34 @@
+{
+  "version": 1,
+  "checked_date": "2026-11-12",
+  "status": "missing_data",
+  "source_revision": {
+    "astr0_main": "67cafe2",
+    "gravity_main": "364fa3e9f740f42acaa1991428ce043f547e10dd"
+  },
+  "sources": [
+    {
+      "url": "https://dark.univ-lyon1.fr/data-releases/",
+      "result": "Reachable. Links MUSE UDF sample to https://dark-matter.osu-lyon.fr/ and describes 126 galaxies."
+    },
+    {
+      "url": "https://dark-matter.osu-lyon.fr/",
+      "result": "Web fetch timed out. Previous HTTPS and HTTP retrieval attempts also timed out. No catalogue obtained."
+    },
+    {
+      "url": "https://doi.org/10.1051/0004-6361/202557396",
+      "result": "Primary publisher search record confirms best fit parameters and 95 percent intervals. Direct publisher page returned 403. Article describes 127 galaxies. Exact release membership remains unverified."
+    },
+    {
+      "url": "https://cdsarc.cds.unistra.fr/viz-bin/cat/J/A+A/708/A112",
+      "result": "Candidate catalogue URL derived from journal identifier. Not linked by paper. Web tool inaccessible; no catalogue verified. System curl timed out after 15 seconds with HTTP 000 and zero bytes."
+    }
+  ],
+  "artifacts": [],
+  "limits": [
+    "No original column schema verified.",
+    "No selected 79 membership verified.",
+    "No joint uncertainty product acquired.",
+    "No fit or observational result computed."
+  ]
+}

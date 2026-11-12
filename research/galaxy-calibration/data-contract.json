@@ -1,0 +1,55 @@
+{
+  "version": 1,
+  "purpose": "Reconstruct galaxy acceleration fits only after survey inputs and their joint uncertainty are verified.",
+  "selection_size": {
+    "study": "MUSE-DARK III RAR sample",
+    "reported_size": 79,
+    "requirement": "Verify membership for replication of this specific result. Other studies must declare their own selection."
+  },
+  "products": {
+    "photometry": {
+      "filename_hint": "photometry_catalogue.txt",
+      "required_fields": [
+        "muse_id",
+        "redshift",
+        "log_stellar_mass",
+        "star_formation_rate"
+      ]
+    },
+    "halo_fit": {
+      "filename_hint": "DC14_bestfit.txt",
+      "required_fields": [
+        "muse_id",
+        "halo_model",
+        "log_virial_mass",
+        "log_stellar_to_halo_mass_ratio"
+      ]
+    },
+    "selection": {
+      "required_fields": [
+        "muse_id",
+        "selection_reason"
+      ]
+    },
+    "joint_uncertainty": {
+      "required_fields": [
+        "muse_id",
+        "joint_draw_id",
+        "radius",
+        "baryonic_acceleration",
+        "observed_acceleration"
+      ],
+      "alternatives": [
+        "Joint posterior draws with shared nuisance parameters",
+        "Original cubes, variance, PSF and photometry plus a validated reconstructed likelihood"
+      ]
+    }
+  },
+  "rules": [
+    "Field names above describe normalized roles, not verified release column names.",
+    "Declare original columns, units, transformations, missing values and model identifiers before normalization.",
+    "Scalar 95 percent intervals do not establish joint uncertainty.",
+    "A model-dependent reconstruction is not an independent measurement of the force law.",
+    "Never substitute all parent rows for the selected 79 galaxies."
+  ]
+}
