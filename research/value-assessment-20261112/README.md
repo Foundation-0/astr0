@@ -8,6 +8,6 @@ An observational study needs a declared sample, its selection rule, covariance a
 
 Wave 12 now traces the quoted approximately 83,900-solar-mass scale to a reproducible total-halo calculation. That mass is not a black-hole seed prediction. Later collapse requires dynamics that the calculation does not provide.
 
-[Canonical observations report, access record and synthetic probe](https://github.com/Foundation-0/gravity/tree/7fbda6cb25878b962bdf5cbff38af26747b80ee2/research/value-assessment-20261112/observations) and [Wave 12 assessment](https://github.com/Foundation-0/gravity/tree/7fbda6cb25878b962bdf5cbff38af26747b80ee2/research/value-assessment-20261112/wave12) follow the [earlier companion](https://github.com/Foundation-0/astr0/pull/5).
+[Canonical observations report, access record and synthetic probe](https://github.com/Foundation-0/gravity/tree/a89a975978797c4b6e3ad6aca334d82d5aa6fa68/research/value-assessment-20261112/observations) and [Wave 12 assessment](https://github.com/Foundation-0/gravity/tree/a89a975978797c4b6e3ad6aca334d82d5aa6fa68/research/value-assessment-20261112/wave12) follow the [earlier companion](https://github.com/Foundation-0/astr0/pull/5).
 
 The assessed astr0 snapshot is `67cafe2defc44d5a4e17815fc7329f65eeef45eb`. Current data availability and limits are recorded in the canonical retrieval summaries.
