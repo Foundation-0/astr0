@@ -12,6 +12,17 @@ class KmosTests(unittest.TestCase):
         self.assertEqual(summarize(fixture())['rows'], 135)
         self.assertFalse(summarize(fixture())['adequacy']['joint_inference'])
 
+    def test_timestamp_does_not_change_numeric_hash(self):
+        first = summarize(b"#request_date: first\n" + fixture())
+        second = summarize(b"#request_date: second\n" + fixture())
+        self.assertNotEqual(first["sha256"], second["sha256"])
+        self.assertEqual(first["numeric_rows_sha256"], second["numeric_rows_sha256"])
+
+    def test_interior_value_changes_numeric_hash(self):
+        first = summarize(fixture())
+        second = summarize(fixture().replace(b"50\t50\t1.0", b"50\t50\t1.1", 1))
+        self.assertNotEqual(first["numeric_rows_sha256"], second["numeric_rows_sha256"])
+
     def test_missing_row(self):
         with self.assertRaises(ValueError):
             summarize(fixture().replace(b'135\t135\t1.0\t10\t10.5\t200\t30\n', b''))
