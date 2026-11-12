@@ -47,3 +47,8 @@ python3 research/galaxy-calibration/kmos_inventory.py kmos-table3.tsv
 The parser checks the catalogue name, columns, units, 135 unique sequence identifiers and finite physical values. Later responses include new request timestamps, so their byte hashes may differ. The recorded ranges and schema provide additional checks. Original catalogue bytes are not redistributed here.
 
 This research has made use of the VizieR catalogue access tool, CDS, Strasbourg, France, [DOI 10.26093/cds/vizier](https://doi.org/10.26093/cds/vizier). The catalogue is credited to Ubler et al. (2017), ApJ 842, 121, catalogue DOI 10.26093/cds/vizier.18420121.
+# KMOS diagnostic increment
+
+The recovered 135-galaxy catalogue now has a [bounded mass–velocity diagnostic](RESULTS.md), with a frozen analysis plan, numerical results and a figure. Its peak-speed proxy decreases with redshift. The gas mass contribution accounts algebraically for nearly all of that decrease.
+
+This is not an acceleration-scale measurement. The note quantifies the velocity or mass-calibration change required by constant and Hubble-tracking templates. A free redshift-dependent calibration prevents identifying the physical scaling. Independent scientific review is pending.

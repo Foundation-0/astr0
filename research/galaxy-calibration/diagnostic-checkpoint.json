@@ -1,0 +1,70 @@
+{
+  "status": "author checkpoint complete; independent review pending",
+  "created_utc": "2026-11-12T23:24:39Z",
+  "files": [
+    {
+      "path": "ANALYSIS-PLAN.md",
+      "bytes": 4089,
+      "sha256": "39bc22224e1d729411ed3c71f3f1b65a0b4531ab83ba2b723dd22111c6953b5b"
+    },
+    {
+      "path": "REPRODUCTION-NOTES.md",
+      "bytes": 2815,
+      "sha256": "23c89323bf134ef635d034c4d5c3b5fda1b3d8ade470d132168f85f66f203890"
+    },
+    {
+      "path": "RESULTS.md",
+      "bytes": 7465,
+      "sha256": "ae14630267f08a8797c815d2d27977f5a13960613896afea70111c76ad478559"
+    },
+    {
+      "path": "kmos_diagnostic.py",
+      "bytes": 11193,
+      "sha256": "facda3d2ac5bd68adf7f7221b88bc377550d2405861f6e245effdf58f5907203"
+    },
+    {
+      "path": "test_kmos_diagnostic.py",
+      "bytes": 1977,
+      "sha256": "c1310f2b2e864e6bb042c8391d10c9b53bf447a25af72805a091b6140bed7185"
+    },
+    {
+      "path": "plot-requirements.txt",
+      "bytes": 19,
+      "sha256": "12a0a7bc6e1b1254c2f593a250e6ccff4dbd3cf0b27d6819696a9db86f4e530d"
+    },
+    {
+      "path": "sources.json",
+      "bytes": 2265,
+      "sha256": "6ea8f69395419c584a315aa661ccd5ab28ff07c71877496404c9c8bdaba7abab"
+    },
+    {
+      "path": "results/kmos-diagnostic.json",
+      "bytes": 14443,
+      "sha256": "d52cb2ca253b480cf65ad79918e6ae222a22c58d270c9be70c42dae5af787878"
+    },
+    {
+      "path": "results/kmos-diagnostic.png",
+      "bytes": 163447,
+      "sha256": "91553d6cd43145251194e094fb5d5198662d2b3a43858cf4ebaa57ca344d1884"
+    },
+    {
+      "path": "results/kmos-diagnostic.pdf",
+      "bytes": 28180,
+      "sha256": "fdf2fef192c97be29e009a5203c356fec59b10739b578ded5fc56a9e06bfa940"
+    }
+  ],
+  "exclusions": [
+    "source-cache/",
+    ".venv/",
+    "__pycache__/",
+    "raw catalogue TSV",
+    "run-output.json"
+  ],
+  "validation": {
+    "unit_tests": 4,
+    "prose_results_and_reproduction_notes": "pass; duplicate-link check pass",
+    "figure_visual_inspection": "pass: readable labels and correct signs",
+    "source_visual_inspection": "published pages4,5 checked",
+    "independent_review": "pending"
+  }
+}
