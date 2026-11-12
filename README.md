@@ -22,6 +22,10 @@ own repository and is listed below.
 | [gaia-dr4](https://github.com/Foundation-0/gaia-dr4) | Which earlier claims hold up against Gaia's fourth data release: planets validated by machine learning, TESS candidates, long-period eclipsing binaries? | Preparing. The archive is offline from 25 Nov; DR4 comes out on 2 Dec 2026. |
 | [lost-eclipses](https://github.com/Foundation-0/lost-eclipses) | Which eclipsing binaries catalogued from old photographic plates no longer eclipse in TESS? | Not started. |
 
+## Connections across Foundation0
+
+[Research note: observations that separate explanations](notes/convergences-20261112.md) connects this repository to the 12 November 2026 convergence study. It separates published evidence, model calculations and proposed tests.
+
 ## Where next
 
 [AREAS.md](AREAS.md) surveys open astronomy data where people working with AI agents can find checkable things. One
