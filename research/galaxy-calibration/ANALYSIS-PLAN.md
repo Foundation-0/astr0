@@ -1,0 +1,20 @@
+# KMOS3D point-table diagnostic: frozen scope
+
+Freeze date: 2026-11-12. This plan was written after reading the paper and table inventory, before computing any table-derived fit or diagnostic. The paper's published result is already known: its fitted baryonic Tully-Fisher zero point rises by 0.17 dex between its low and high redshift samples. This is an analysis-scope freeze, not blind preregistration.
+
+Purpose: determine what the 135 catalogue point estimates can say about an acceleration scale proportional to E(z)^q, with E(z) = sqrt(0.315(1+z)^3 + 0.685), without converting absent data into evidence.
+
+Input: separately retrieved official VizieR J/ApJ/842/121/table3, validated by the existing kmos_inventory.py. Require canonical numeric SHA-256 afadb1ef14ab6b88ce492f3fbf53d7d81e30fe178dcab6642aafdd1744c918f3. Do not redistribute the raw input or article PDF.
+
+1. Reconstruct the three separated redshift groups using boundaries z=1.2 and z=1.8. Require group sizes 65, 24, 46, corresponding to the paper's YJ, H, K counts. Report actual redshift ranges. Confirm the tabulated medians of stellar mass, baryonic mass, circular velocity and dispersion, allowing the published precision and rounded input. Stop on a material mismatch.
+2. Report unweighted mean residuals logMstar - 3.60 log10(Vcirc/242) and logMb - 3.75 log10(Vcirc/242). Compare to published Table 2 values while labeling the missing error model. These are point summaries, not a reproduction of the published weighted inverse regression.
+3. Primary diagnostic: b4 = logMb - 4 log10(Vcirc/242), using every valid row. Define y = log10[Vcirc^4/(G Mb)] in SI units as a dimensional proxy, not an a0 measurement. Report low-to-high differences of the means, and delta x = delta mean[log10 E(z)]. Report q=0 and q=1 predictions anchored to the low-redshift mean. No estimated q or q confidence interval.
+4. Compare q=0 and q=1 using descriptive residual RMS after an unweighted common intercept in y = C + q x. Report all 135 rows and the 111 low/high rows. Do not compute p-values, Bayes factors, information criteria, or statistical preference.
+5. Sensitivity checks fixed now: replace means by medians; match the low/high samples by three fixed velocity bins [100,200), [200,300), [300,500] km/s, assigning equal total weight to each occupied bin; repeat the primary residual with stellar mass to isolate the algebraic contribution of the catalogue gas estimate. Report the within-bin counts. These checks do not reconstruct a survey selection function.
+6. Compute the exact calibration contrasts required to reproduce each q law. Let cv=log10(Vpeak/Vflat), cm=log10(Mtab/Mtrue). Then delta y = q delta x + 4 delta cv - delta cm, subject to the bTFR and population assumptions. Report velocity-only and mass-only contrasts. Treat them as required nuisance adjustments, not empirical priors or plausibility probabilities.
+7. Report the fraction 4.4 sigma0^2/Vcirc^2 and the approximate rotation speed sqrt(Vcirc^2-4.4 sigma0^2), using the paper's peak at 2.2 disk scale lengths. Check positivity and the published rotation-dominated cut vrot/sigma0 > sqrt(4.4), allowing rounded data. Recompute b4 with this rotation proxy to quantify pressure-support sensitivity. This removal is deliberately not a valid corrected a0 estimate.
+8. Generate a standalone scientific figure of the point proxy, group means, and q predictions. Include an explicit label that Vpeak is not Vflat. Record failures and missing information.
+
+The paper uses a different background cosmology (Omega_m=0.3, H0=70). The requested E(z) is only an evolution template here. Published masses and velocities are not rescaled because individual distances, sizes and inference products are absent. This mismatch belongs in the limitation record.
+
+Needed for an actual inference: defensible Vpeak-to-asymptotic mapping or resolved acceleration profiles, mass/gas calibration uncertainty with redshift dependence, individual correlated uncertainties, and sample selection information. A zero-redshift anchor alone does not establish those quantities.

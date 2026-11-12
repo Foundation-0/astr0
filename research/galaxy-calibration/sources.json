@@ -1,0 +1,63 @@
+{
+  "catalogue": {
+    "identifier": "J/ApJ/842/121/table3",
+    "doi": "10.26093/cds/vizier.18420121",
+    "citation": "Übler et al. (2017), ApJ 842,121",
+    "raw_data_redistributed": false,
+    "numeric_rows_sha256": "afadb1ef14ab6b88ce492f3fbf53d7d81e30fe178dcab6642aafdd1744c918f3"
+  },
+  "article": {
+    "title": "The Evolution of the Tully-Fisher Relation between z ~ 2.3 and z ~ 0.9 with KMOS3D",
+    "doi": "10.3847/1538-4357/aa7558",
+    "arxiv": "https://arxiv.org/abs/1703.04321v2",
+    "url": "https://www.mpe.mpg.de/~saglia/journals_pdf/uebler2017.pdf",
+    "published_pdf_pages": 22,
+    "pdf_sha256": "2f88618d9524b066d2acf0896f51f424681f22af03deeb77ca7e13f98c5bfbc6",
+    "cached_utc_date": "2026-11-12",
+    "redistributed": false,
+    "page_map": {
+      "2": "assumed cosmology",
+      "3": "stellar/gas mass derivation, model velocity, pressure equation1, peak choice",
+      "4": "sample flow, rotation cut with square root, counts",
+      "5": "Table1 summaries, sample star-formation offsets",
+      "6": "Eq2 inverse regression and errors",
+      "8": "Table2 regression values and selection comparisons",
+      "11": "mass/atomic gas systematics, velocity uncertainty discussion",
+      "12": "peak-radius approximation and pressure effects",
+      "20": "Table3 column definitions"
+    },
+    "visually_inspected_pages": [
+      4,
+      5
+    ]
+  },
+  "frozen_plan": {
+    "sha256": "39bc22224e1d729411ed3c71f3f1b65a0b4531ab83ba2b723dd22111c6953b5b",
+    "meaning": "analysis scope frozen after reading published result but before computing row diagnostics"
+  },
+  "execution": {
+    "python": "3.14.6",
+    "matplotlib": "3.10.8",
+    "dependencies": "standard library for calculations; matplotlib only for plotting"
+  },
+  "publication_allowlist": [
+    "ANALYSIS-PLAN.md",
+    "REPRODUCTION-NOTES.md",
+    "RESULTS.md",
+    "kmos_diagnostic.py",
+    "test_kmos_diagnostic.py",
+    "plot-requirements.txt",
+    "sources.json",
+    "results/kmos-diagnostic.json",
+    "results/kmos-diagnostic.png",
+    "results/kmos-diagnostic.pdf"
+  ],
+  "publication_exclusions": [
+    "source-cache/",
+    ".venv/",
+    "__pycache__/",
+    "raw catalogue TSV",
+    "run-output.json"
+  ],
+  "independent_review_status": "requested; not complete"
+}

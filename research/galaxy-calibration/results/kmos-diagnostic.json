@@ -1,0 +1,453 @@
+{
+  "analysis_type": "descriptive point-table diagnostic; no q inference",
+  "input": {
+    "catalogue": "J/ApJ/842/121/table3",
+    "rows": 135,
+    "bytes": 8472,
+    "sha256": "439100b80e7907a4e8f45b9a39e0737e9fb73597e0746d6faf8798682d186852",
+    "numeric_rows_sha256": "afadb1ef14ab6b88ce492f3fbf53d7d81e30fe178dcab6642aafdd1744c918f3",
+    "numeric_rows_serialization": "UTF-8 JSON list in received row order; parsed floats; sorted object keys; compact separators; no NaN",
+    "ranges": {
+      "z": [
+        0.602,
+        2.529
+      ],
+      "logM*": [
+        9.53,
+        11.46
+      ],
+      "logMb": [
+        9.81,
+        11.63
+      ],
+      "Vcirc": [
+        111.6,
+        476.1
+      ],
+      "sigma0": [
+        1.0,
+        158.9
+      ]
+    },
+    "adequacy": {
+      "tully_fisher_diagnostic": true,
+      "radial_acceleration_relation": false,
+      "joint_inference": false
+    },
+    "missing": [
+      "measurement uncertainty columns",
+      "radius profiles",
+      "joint posterior or covariance"
+    ],
+    "no_new_fit": true
+  },
+  "constants": {
+    "G_SI": 6.6743e-11,
+    "Msun_kg": 1.98847e+30,
+    "vref_kms": 242.0,
+    "Omega_m_for_evolution": 0.315
+  },
+  "groups": {
+    "low": {
+      "n": 65,
+      "redshift_range": [
+        0.602,
+        1.032
+      ],
+      "redshift_mean": 0.8835846153846154,
+      "table1_checks_upper_central_order_statistic": {
+        "logM*": {
+          "calculated": 10.49,
+          "published": 10.49,
+          "tolerance": 0.015,
+          "passes": true
+        },
+        "logMb": {
+          "calculated": 10.62,
+          "published": 10.62,
+          "tolerance": 0.015,
+          "passes": true
+        },
+        "Vcirc": {
+          "calculated": 239.1,
+          "published": 239,
+          "tolerance": 1.0,
+          "passes": true
+        },
+        "sigma0": {
+          "calculated": 30.2,
+          "published": 30,
+          "tolerance": 1.0,
+          "passes": true
+        }
+      },
+      "conventional_input_medians": {
+        "logM*": 10.49,
+        "logMb": 10.62,
+        "Vcirc": 239.1,
+        "sigma0": 30.2
+      },
+      "mean": {
+        "x": 0.2226579557083114,
+        "y": -9.280753201758108,
+        "y_star": -9.09829166329657,
+        "y_rotation": -9.419206430353135,
+        "b_star": 10.503796293572517,
+        "b_baryon": 10.688819857086756,
+        "b4": 10.693089898841258,
+        "log_mass_boost": 0.18246153846153848,
+        "gas_fraction": 0.330789228089916,
+        "pressure_fraction": 0.13372770923209717,
+        "rotation_proxy": 226.9780242382051
+      },
+      "median": {
+        "x": 0.2270857814384546,
+        "y": -9.236583570346093,
+        "y_star": -9.114871941502404,
+        "y_rotation": -9.338967427161199,
+        "b_star": 10.523856166837046,
+        "b_baryon": 10.658513183866596,
+        "b4": 10.648920267429244,
+        "log_mass_boost": 0.16999999999999993,
+        "gas_fraction": 0.3239170246080181,
+        "pressure_fraction": 0.08916318339100344,
+        "rotation_proxy": 232.85454687422362
+      },
+      "point_scatter_population_sd_y": 0.3558636827743031,
+      "table2_mean_residual_minus_published": {
+        "b_star": 0.01379629357251666,
+        "b_baryon": 0.008819857086756144
+      }
+    },
+    "mid": {
+      "n": 24,
+      "redshift_range": [
+        1.306,
+        1.665
+      ],
+      "redshift_mean": 1.521375,
+      "table1_checks_upper_central_order_statistic": {
+        "logM*": {
+          "calculated": 10.72,
+          "published": 10.72,
+          "tolerance": 0.015,
+          "passes": true
+        },
+        "logMb": {
+          "calculated": 10.97,
+          "published": 10.97,
+          "tolerance": 0.015,
+          "passes": true
+        },
+        "Vcirc": {
+          "calculated": 263.5,
+          "published": 263,
+          "tolerance": 1.0,
+          "passes": true
+        },
+        "sigma0": {
+          "calculated": 46.8,
+          "published": 47,
+          "tolerance": 1.0,
+          "passes": true
+        }
+      },
+      "conventional_input_medians": {
+        "logM*": 10.71,
+        "logMb": 10.935,
+        "Vcirc": 262.95,
+        "sigma0": 45.7
+      },
+      "mean": {
+        "x": 0.37898157615890526,
+        "y": -9.375108763785244,
+        "y_star": -9.113858763785244,
+        "y_rotation": -9.566803864079679,
+        "b_star": 10.535825914781553,
+        "b_baryon": 10.793464494564118,
+        "b4": 10.787445460868392,
+        "log_mass_boost": 0.26125,
+        "gas_fraction": 0.44024023635028464,
+        "pressure_fraction": 0.18302925817416546,
+        "rotation_proxy": 245.57831090228728
+      },
+      "median": {
+        "x": 0.3811961545955956,
+        "y": -9.403547007914021,
+        "y_star": -9.146134203634222,
+        "y_rotation": -9.509726337397705,
+        "b_star": 10.546991646025543,
+        "b_baryon": 10.81867712681325,
+        "b4": 10.815883704997173,
+        "log_mass_boost": 0.2400000000000002,
+        "gas_fraction": 0.4244075097270313,
+        "pressure_fraction": 0.1358112647601778,
+        "rotation_proxy": 242.14683393410846
+      },
+      "point_scatter_population_sd_y": 0.32905114642327177,
+      "table2_mean_residual_minus_published": {}
+    },
+    "high": {
+      "n": 46,
+      "redshift_range": [
+        2.028,
+        2.529
+      ],
+      "redshift_mean": 2.2675434782608694,
+      "table1_checks_upper_central_order_statistic": {
+        "logM*": {
+          "calculated": 10.51,
+          "published": 10.51,
+          "tolerance": 0.015,
+          "passes": true
+        },
+        "logMb": {
+          "calculated": 10.89,
+          "published": 10.89,
+          "tolerance": 0.015,
+          "passes": true
+        },
+        "Vcirc": {
+          "calculated": 259.8,
+          "published": 260,
+          "tolerance": 1.0,
+          "passes": true
+        },
+        "sigma0": {
+          "calculated": 48.9,
+          "published": 49,
+          "tolerance": 1.0,
+          "passes": true
+        }
+      },
+      "conventional_input_medians": {
+        "logM*": 10.504999999999999,
+        "logMb": 10.879999999999999,
+        "Vcirc": 257.1,
+        "sigma0": 48.4
+      },
+      "mean": {
+        "x": 0.5331823734763511,
+        "y": -9.448237092790873,
+        "y_star": -9.101932744964785,
+        "y_rotation": -9.657559930655315,
+        "b_star": 10.519407715234445,
+        "b_baryon": 10.86378521061559,
+        "b4": 10.860573789874021,
+        "log_mass_boost": 0.34630434782608693,
+        "gas_fraction": 0.5395965924842935,
+        "pressure_fraction": 0.2025020577264158,
+        "rotation_proxy": 231.88794011248203
+      },
+      "median": {
+        "x": 0.5260645370997044,
+        "y": -9.392318512818058,
+        "y_star": -9.050051914683786,
+        "y_rotation": -9.588109157216259,
+        "b_star": 10.497843379602845,
+        "b_baryon": 10.818114259282382,
+        "b4": 10.80465520990121,
+        "log_mass_boost": 0.33999999999999986,
+        "gas_fraction": 0.5429118103851248,
+        "pressure_fraction": 0.19800805354142925,
+        "rotation_proxy": 235.29108467296714
+      },
+      "point_scatter_population_sd_y": 0.3665031295485444,
+      "table2_mean_residual_minus_published": {
+        "b_star": 0.00940771523444539,
+        "b_baryon": 0.013785210615591126
+      }
+    }
+  },
+  "primary_low_to_high": {
+    "delta_x": 0.31052441776803974,
+    "delta_y_dex": -0.16748389103276473,
+    "delta_b4_dex": 0.16748389103276473,
+    "q_comparisons": {
+      "0": {
+        "predicted_delta_y_dex": 0.0,
+        "observed_minus_predicted_dex": -0.16748389103276473,
+        "required_Vpeak_over_Vflat_high_to_low_ratio_if_mass_exact": 0.9080902802801143,
+        "required_Mtab_over_Mtrue_high_to_low_ratio_if_velocity_exact": 1.4705638678440887
+      },
+      "1": {
+        "predicted_delta_y_dex": 0.31052441776803974,
+        "observed_minus_predicted_dex": -0.47800830880080447,
+        "required_Vpeak_over_Vflat_high_to_low_ratio_if_mass_exact": 0.7594477902733974,
+        "required_Mtab_over_Mtrue_high_to_low_ratio_if_velocity_exact": 3.0061338145911254
+      }
+    }
+  },
+  "sensitivity": {
+    "median_low_to_high": {
+      "delta_x": 0.29897875566124976,
+      "delta_y_dex": -0.1557349424719643,
+      "delta_b4_dex": 0.1557349424719643,
+      "q_comparisons": {
+        "0": {
+          "predicted_delta_y_dex": 0.0,
+          "observed_minus_predicted_dex": -0.1557349424719643,
+          "required_Vpeak_over_Vflat_high_to_low_ratio_if_mass_exact": 0.9142527269412801,
+          "required_Mtab_over_Mtrue_high_to_low_ratio_if_velocity_exact": 1.4313140765987027
+        },
+        "1": {
+          "predicted_delta_y_dex": 0.29897875566124976,
+          "observed_minus_predicted_dex": -0.45471369813321405,
+          "required_Vpeak_over_Vflat_high_to_low_ratio_if_mass_exact": 0.7697001575702539,
+          "required_Mtab_over_Mtrue_high_to_low_ratio_if_velocity_exact": 2.849139397532756
+        }
+      }
+    },
+    "velocity_bins": [
+      {
+        "velocity_bin_kms": [
+          100.0,
+          200.0
+        ],
+        "counts": {
+          "low": 20,
+          "high": 10
+        },
+        "delta_x": 0.31324696257205353,
+        "delta_y_dex": -0.22426402102779974,
+        "delta_b4_dex": 0.22426402102779974,
+        "q_comparisons": {
+          "0": {
+            "predicted_delta_y_dex": 0.0,
+            "observed_minus_predicted_dex": -0.22426402102779974,
+            "required_Vpeak_over_Vflat_high_to_low_ratio_if_mass_exact": 0.8788889307488543,
+            "required_Mtab_over_Mtrue_high_to_low_ratio_if_velocity_exact": 1.6759614351031706
+          },
+          "1": {
+            "predicted_delta_y_dex": 0.31324696257205353,
+            "observed_minus_predicted_dex": -0.5375109835998533,
+            "required_Vpeak_over_Vflat_high_to_low_ratio_if_mass_exact": 0.733875271576651,
+            "required_Mtab_over_Mtrue_high_to_low_ratio_if_velocity_exact": 3.4475532555719792
+          }
+        }
+      },
+      {
+        "velocity_bin_kms": [
+          200.0,
+          300.0
+        ],
+        "counts": {
+          "low": 29,
+          "high": 26
+        },
+        "delta_x": 0.3060039343734411,
+        "delta_y_dex": -0.1880332306931365,
+        "delta_b4_dex": 0.1880332306931365,
+        "q_comparisons": {
+          "0": {
+            "predicted_delta_y_dex": 0.0,
+            "observed_minus_predicted_dex": -0.1880332306931365,
+            "required_Vpeak_over_Vflat_high_to_low_ratio_if_mass_exact": 0.8974116276376577,
+            "required_Mtab_over_Mtrue_high_to_low_ratio_if_velocity_exact": 1.5418184229834493
+          },
+          "1": {
+            "predicted_delta_y_dex": 0.3060039343734411,
+            "observed_minus_predicted_dex": -0.4940371650665776,
+            "required_Vpeak_over_Vflat_high_to_low_ratio_if_mass_exact": 0.7524726316530131,
+            "required_Mtab_over_Mtrue_high_to_low_ratio_if_velocity_exact": 3.119156496761986
+          }
+        }
+      },
+      {
+        "velocity_bin_kms": [
+          300.0,
+          500.0
+        ],
+        "counts": {
+          "low": 16,
+          "high": 10
+        },
+        "delta_x": 0.32088149619101713,
+        "delta_y_dex": -0.18621449746173724,
+        "delta_b4_dex": 0.18621449746173724,
+        "q_comparisons": {
+          "0": {
+            "predicted_delta_y_dex": 0.0,
+            "observed_minus_predicted_dex": -0.18621449746173724,
+            "required_Vpeak_over_Vflat_high_to_low_ratio_if_mass_exact": 0.8983516620522243,
+            "required_Mtab_over_Mtrue_high_to_low_ratio_if_velocity_exact": 1.5353751152723547
+          },
+          "1": {
+            "predicted_delta_y_dex": 0.32088149619101713,
+            "observed_minus_predicted_dex": -0.5070959936527544,
+            "required_Vpeak_over_Vflat_high_to_low_ratio_if_mass_exact": 0.7468373023885772,
+            "required_Mtab_over_Mtrue_high_to_low_ratio_if_velocity_exact": 3.214370943958868
+          }
+        }
+      }
+    ],
+    "equal_velocity_bin_weight": {
+      "delta_y_dex": -0.1995039163942245,
+      "delta_x": 0.31337746437883723
+    },
+    "stellar_mass_proxy_delta_y_dex": -0.003641081668215307,
+    "catalogue_gas_mass_boost_delta_dex": 0.16384280936454845,
+    "rotation_proxy_delta_y_dex": -0.23835350030218017,
+    "pressure_removal_changes_delta_y_by_dex": -0.07086960926941543
+  },
+  "q_scores": {
+    "all_135": {
+      "0": {
+        "unweighted_intercept_log10_SI": -9.354596108988911,
+        "descriptive_rms_dex": 0.3628788107170334
+      },
+      "1": {
+        "unweighted_intercept_log10_SI": -9.710853250683476,
+        "descriptive_rms_dex": 0.41498661120128366
+      }
+    },
+    "low_high_111": {
+      "0": {
+        "unweighted_intercept_log10_SI": -9.3501609403843,
+        "descriptive_rms_dex": 0.36963660688825406
+      },
+      "1": {
+        "unweighted_intercept_log10_SI": -9.70150469084333,
+        "descriptive_rms_dex": 0.4314728262620271
+      }
+    }
+  },
+  "rotation_cut_reconstruction_failures": [
+    {
+      "Seq": 6.0,
+      "pressure_fraction": 0.5099673055989798,
+      "reconstructed_vrot_over_sigma0": 2.0562111012714146
+    }
+  ],
+  "selection_accounting": {
+    "observed": 536,
+    "resolved_uncontaminated": 316,
+    "modeled_parent": 240,
+    "peak_covered": 149,
+    "rotation_dominated": 139,
+    "final": 135,
+    "final_fraction_of_modeled_parent": 0.5625,
+    "final_fraction_of_observed": 0.251865671641791
+  },
+  "assertions": [
+    "canonical numeric input hash",
+    "65/24/46 groups",
+    "12 Table 1 central summaries matched by upper-middle convention; ordinary medians also recorded",
+    "positive approximate rotation speed; cut failures reported",
+    "all low/high rows in three populated fixed speed bins",
+    "stellar-minus-gas decomposition",
+    "q-velocity-calibration degeneracy"
+  ],
+  "limitations": [
+    "Vcirc is modeled peak, not measured asymptotic speed",
+    "gas mass uses empirical redshift-dependent scaling",
+    "no row errors or covariance",
+    "no resolved radii or accelerations",
+    "selected sample only; no individual parent selection probabilities",
+    "published cosmology differs; no mass or speed distance rescaling attempted",
+    "no fitted q or confidence interval",
+    "descriptive RMS is not model evidence"
+  ],
+  "code_sha256": "facda3d2ac5bd68adf7f7221b88bc377550d2405861f6e245effdf58f5907203",
+  "frozen_plan_sha256": "39bc22224e1d729411ed3c71f3f1b65a0b4531ab83ba2b723dd22111c6953b5b"
+}

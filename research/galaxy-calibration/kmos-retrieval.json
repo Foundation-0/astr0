@@ -1,0 +1,47 @@
+{
+  "catalogue": "J/ApJ/842/121/table3",
+  "rows": 135,
+  "bytes": 8472,
+  "sha256": "439100b80e7907a4e8f45b9a39e0737e9fb73597e0746d6faf8798682d186852",
+  "ranges": {
+    "z": [
+      0.602,
+      2.529
+    ],
+    "logM*": [
+      9.53,
+      11.46
+    ],
+    "logMb": [
+      9.81,
+      11.63
+    ],
+    "Vcirc": [
+      111.6,
+      476.1
+    ],
+    "sigma0": [
+      1.0,
+      158.9
+    ]
+  },
+  "adequacy": {
+    "tully_fisher_diagnostic": true,
+    "radial_acceleration_relation": false,
+    "joint_inference": false
+  },
+  "missing": [
+    "measurement uncertainty columns",
+    "radius profiles",
+    "joint posterior or covariance"
+  ],
+  "no_new_fit": true,
+  "retrieved_utc": "2026-11-12T23:08:00Z",
+  "source_url": "https://vizier.cfa.harvard.edu/viz-bin/asu-tsv?-source=J/ApJ/842/121/table3&-out.all&-out.max=unlimited",
+  "source_doi": "10.26093/cds/vizier.18420121",
+  "paper_bibcode": "2017ApJ...842..121U",
+  "rights_url": "https://cds.unistra.fr/vizier-org/licences_vizier.html",
+  "distribution": "Original bytes kept outside repository. Hash includes request timestamp, so later retrieval hashes may differ. Compare schema, membership and ranges independently.",
+  "numeric_rows_sha256": "afadb1ef14ab6b88ce492f3fbf53d7d81e30fe178dcab6642aafdd1744c918f3",
+  "numeric_rows_serialization": "UTF-8 JSON list in received row order; parsed floats; sorted object keys; compact separators; no NaN"
+}
