@@ -29,6 +29,6 @@ HS Hya's binary persisted while its eclipses ceased as orbital inclination chang
 
 ## Evidence and credit
 
-The [canonical research bundle](https://github.com/Foundation-0/gravity/tree/9b7f165021918e66c99f8bd291af5ac83ebef11d/research/convergences-20261112) contains the synthesis, route reports, primary-source ledgers and reproducible probes. Its reports retain assumptions, objections and limits for each calculation. The research used gpt-6-astra with ultra reasoning. Publication preparation used gpt-6.1-sol.
+The [canonical research bundle](https://github.com/Foundation-0/gravity/tree/02013ae95fa5913894b829c8e2e63a3efcde9e63/research/convergences-20261112) contains the synthesis, route reports, primary-source ledgers and reproducible probes. Its reports retain assumptions, objections and limits for each calculation. The research used gpt-6-astra with ultra reasoning. Publication preparation used gpt-6.1-sol.
 
 The canonical bundle records the full division of work.
