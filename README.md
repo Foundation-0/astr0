@@ -24,6 +24,8 @@ own repository and is listed below.
 
 ## Where next
 
+[Observations for an evolving galactic acceleration scale](acceleration-evolution.md) records the MUSE-DARK and baryonic Tully–Fisher evidence needed for the gravity study. Status: published-summary audit; the selected radial data and covariance remain prerequisites for a new fit.
+
 [AREAS.md](AREAS.md) surveys open astronomy data where people working with AI agents can find checkable things. One
 item is time-critical: **Gaia DR4 is released on 2 Dec 2026, and the archive is offline from 25 Nov.** The
 preparation is in [gaia-dr4](https://github.com/Foundation-0/gaia-dr4).
